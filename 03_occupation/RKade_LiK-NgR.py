@@ -8,15 +8,21 @@ import csv, random
 occupationList = []
 
 def fillList():
+	#reads csv file
 	csvFileObject = open( 'occupations.csv', 'rb')
 	dictionaryReader = csv.DictReader( csvFileObject)
+	
+	#looks at each row except for the last
 	for row in dictionaryReader:
 		if (row['Job Class'] != 'Total'):
+		
+			#fills occupationList with occupations with frequency corresponding to their percentages
 			i = 0
 			while i < (float(row['Percentage'])*10):
 				occupationList.append(row['Job Class'])
 				i+=1
 
+#returns a randomly selected occupation from occupationList
 def randomOccupation():
 	return random.choice(occupationList)
 				
