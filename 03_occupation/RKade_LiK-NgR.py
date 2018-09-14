@@ -1,5 +1,5 @@
 # RKade: Karen Li, Rachel Ng
-# SoftDev1 pd06
+# SoftDev1 pd07
 # K #06: StI/O: Divine your Destiny!
 # 2018 - 09 - 13
 
