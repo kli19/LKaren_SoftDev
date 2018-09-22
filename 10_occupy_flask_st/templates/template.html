@@ -19,7 +19,12 @@
 	<th> Percentage </th>
       </tr>
 
-
+      {% for occupation in occList %}
+      <tr>
+	<td> {{occupation}}</td>
+	<td> {{occList[occupation]}}</td>
+      </tr>
+      {% endfor %}
 
   </body>
 </html>
