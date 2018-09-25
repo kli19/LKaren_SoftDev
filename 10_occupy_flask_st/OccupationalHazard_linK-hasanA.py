@@ -19,7 +19,7 @@ def fillList():
 
     #reads csv file
 
-    csvFileObject = open( 'occupations.csv', 'r')
+    csvFileObject = open( './data/occupations.csv', 'r')
 
     dictionaryReader = csv.DictReader( csvFileObject)
 
@@ -33,7 +33,7 @@ def fillList():
 
 	    
 
-       	    #fills occupationList with occupations with frequency dependent on percentagE
+       	    #fills occupationList with occupations with frequency dependent on percentage
 
             occupationDic[row['Job Class']] = row['Percentage']
 
@@ -55,7 +55,10 @@ def randomOccupation():
 
     return random.choice(weightedOccupationList)
 
+@app.route("/")
 
+def home():
+    return "<a href='occupations'>Click to view the occupation table</a>"
 
 
 
@@ -63,7 +66,13 @@ def randomOccupation():
 
 def template():
 
-    return render_template('template.html', randOcc = randomOccupation(), occList = occupationDic) 
+    return render_template('template.html', 
+                            randOcc = randomOccupation(), 
+                            occDict = occupationDic,
+                            title = "Occupation Data",
+                            header = "United States Occupations Information",
+                            info = "This page shows occupations in the United States along with the percentage of the U.S. workforce it comprises."
+                            ) 
 
 
 
