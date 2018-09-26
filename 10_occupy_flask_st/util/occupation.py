@@ -29,11 +29,11 @@ def fillList():
 
         if (row['Job Class'] != 'Total'):
 
-	    
-
-       	    #fills occupationList with occupations with frequency dependent on percentage
+			# fills occupationDic with job keys linked with percentage values
 
             occupationDic[row['Job Class']] = row['Percentage']
+			
+			#fills occupationList with occupations with frequency dependent on percentage
 
             i = 0
 
