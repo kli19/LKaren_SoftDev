@@ -16,7 +16,8 @@ def authenticate():
     print(app)
     print(request)
     print(request.args)
-    name = request.args.get("username")
+    name = request.args["username"]
+    #name = request.form["username"]
     methodUsed = request.method 
     return render_template('results.html',
                            field0 = "username",
