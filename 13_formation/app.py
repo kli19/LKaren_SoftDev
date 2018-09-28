@@ -11,7 +11,7 @@ def home():
     return render_template('form.html')
     
 
-@app.route("/auth")
+@app.route("/auth", methods=["POST", "GET"])
 def authenticate():
     print(app)
     print(request)
