@@ -1,7 +1,7 @@
 # Karen Li
 # SoftDev1 pd7
-# K #14: Echo Echo Echo .
-# 2018-09-27
+# K #14: Do I Know You? 
+# 2018-10-01
 
 from flask import Flask,render_template,request,redirect,url_for,session
 import os
