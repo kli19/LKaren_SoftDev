@@ -32,6 +32,22 @@ with open('courses.csv') as csvfile:
         #build SQL stmt, save as string
         c.execute(command)    #run SQL statement
 
+command = "CREATE TABLE peeps (name TEXT, age INT, id INT)"          #build SQL stmt, save as string
+c.execute(command)    #run SQL statement
+with open('peeps.csv') as csvfile:
+    reader = csv.DictReader(csvfile)
+    for row in reader:
+        print(row['name'], row['age'], row['id'])
+        name = row['name']
+        age = row['age']
+        peep_id = row['id']
+        command = 'INSERT INTO courses VALUES ('
+        command += '"' + name + '", '
+        command += age + ', '
+        command += peep_id + ')'
+        #build SQL stmt, save as string
+        c.execute(command)    #run SQL statement
+
 #==========================================================
 
 db.commit() #save changes
