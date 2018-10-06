@@ -41,7 +41,7 @@ with open('peeps.csv') as csvfile:
         name = row['name']
         age = row['age']
         peep_id = row['id']
-        command = 'INSERT INTO courses VALUES ('
+        command = 'INSERT INTO peeps VALUES ('
         command += '"' + name + '", '
         command += age + ', '
         command += peep_id + ')'
