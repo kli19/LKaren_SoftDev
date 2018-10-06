@@ -1,4 +1,4 @@
-# Karen Li
+# Duck Duck Goose - Karen Li, Jiayang Chen
 # SoftDev1 pd7
 # K #14: Do I Know You? 
 # 2018-10-01
