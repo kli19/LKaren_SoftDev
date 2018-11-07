@@ -74,17 +74,19 @@ command = "CREATE TABLE peeps_avg ( ID INTEGER, AVERAGE FLOAT )"
 c.execute(command)
 
 for x in range(0,10):
-    command = "INSERT INTO peeps_avg VALUES " + "(" +  str(id_list[x]) + ", " + str(avg_list[x]) + ");"
+    command = "INSERT INTO peeps_avg VALUES (?,?)"
     #print(command)
-    c.execute(command)
+    c.execute(command, (str(id_list[x]), str(avg_list[x])))
 
 # ==============================Creating New Row==============================
 
 def row_Add(code, mark, id):
     command = "INSERT INTO courses VALUES " + "(" + '"' + code + '"' + ", " + str(mark) + ", " + str(id) + ");"
     c.execute(command)
+    #command = "INSERT INTO courses VALUES (?,?,?);"
+    #c.execute(command, code, str(mark), str(id))
 
-#row_Add("hello" ,78, 1000)
+row_Add("hello" ,78, 1000)
 
 #==============================Creating Update==============================
 
