@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Bootstrap JaLiFish</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+
+  <body background="static/background.jpg">
+
+    <nav class=" navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">JaLi Fish</a>
+
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#grid" <button class="btn btn-default" </button>Grid Sys</a> </li> <li class="active"><a href="#alerts" <button class="btn btn-info" </button>Alerts </a> </li> <li class="active"><a href="#endangered" <button
+                  class="btn btn-danger" </button> Table </a> </li> </div> </nav> <!-- Mask & flexbox options-->
+                  <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
+                    <!-- Content -->
+                    <div class="container">
+                      <!--Grid row-->
+                      <div class="row mt-5">
+                        <!--Grid column-->
+                        <div class="col-md-6 mb-5 mt-md-0 mt-5 white-text text-center text-md-left">
+                          <h1 class="h1-responsive font-weight-bold wow fadeInLeft" data-wow-delay="0.3s">Sign up to save Jelly Fish Lives! </h1>
+                          <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s">
+                          <h6 class="mb-3 wow fadeInLeft" data-wow-delay="0.3s">Jellyfish or sea jellies are the informal common names given to the medusa-phase of certain gelatinous members of the subphylum Medusozoa, a major part of the phylum
+                            Cnidaria. Jellyfish are mainly free-swimming marine animals with umbrella-shaped bells and trailing tentacles, although a few are not mobile, being anchored to the seabed by stalks.</h6>
+                          <a class="btn btn-outline-white wow fadeInLeft" data-wow-delay="0.3s">Learn more</a>
+                        </div>
+                        <!--Grid column-->
+                        <!--Grid column-->
+                        <div class="col-md-6 col-xl-5 mb-4">
+                          <!--Form-->
+                          <div class="card wow fadeInRight" data-wow-delay="0.3s">
+                            <div class="card-body">
+                              <!--Header-->
+                              <div class="container">
+                                <form>
+                                  <div class="form-group">
+                                    <label for="email">Email:</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter email" style="width:35vw;">
+                                  </div>
+				  
+                                  <div class="form-group">
+                                    <label for="pwd">Password:</label>
+                                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" style="width:35vw;">
+                                  </div>
+                                  <div class="checkbox">
+                                    <label><input type="checkbox"> Remember me</label>
+                                  </div>
+                                  <button type="submit" class="btn btn-default">Submit</button>
+                                </form>
+                              </div>
+                              <!--Body-->
+                            </div>
+                          </div>
+                          <!--/.Form-->
+                        </div>
+                        <!--Grid column-->
+                      </div>
+                      <!--Grid row-->
+                    </div>
+                    <!-- Content -->
+                  </div>
+                  <!-- Mask & flexbox options-->
+      </div>
+
+      <div class="container" id="endangered">
+        <h1>Endangered Jelly Fish Types</h1>
+
+        <table class="table table-dark">
+          <tr>
+            <th>Species</th>
+            <th>Population</th>
+            <th>Image</th>
+          </tr>
+          <tr>
+            <td>Moon Jellies</td>
+            <td>164,000</td>
+            <td><img src="static/moonjellies.jpg" class="img-rounded" alt="logo" width="70 " height="70"></td>
+          </tr>
+          <tr>
+            <td>Box Jellyfish</td>
+            <td>34,000</td>
+            <td><img src="static/boxjellyfish.jpg" class="img-rounded" alt="logo" width="70 " height="70"></td>
+          </tr>
+          <tr>
+            <td>Immortal Jellyfish</td>
+            <td>68,000</td>
+            <td><img src="static/immortal.jpg" class="img-rounded" alt="logo" width="70 " height="70"></td>
+          </tr>
+          <tr>
+            <td>Cnidaria</td>
+            <td>225,000</td>
+            <td><img src="static/cnidaria.png" class="img-rounded" alt="logo" width="70 " height="70"></td>
+          </tr>
+        </table>
+
+      </div>
+
+      <div class="container" id="alerts">
+        <div class="alert alert-success">
+          <strong>Success!</strong> Well done its submitted.
+        </div>
+        <div class="alert alert-info">
+          <strong>Info!</strong> take this info.
+        </div>
+        <div class="alert alert-warning">
+          <strong>Warning!</strong> Dont submit this.
+        </div>
+        <div class="alert alert-danger">
+          <strong>Danger!</strong> Change few things.
+        </div>
+      </div>
+
+
+
+      <div class="container-fluid" id="grid">
+        <h1>Bootstrap Grid System</h1>
+        <p>Resize the browser window to see the effect.</p>
+        <div class="row">
+          <div class="col-md-4" style="background-color:lavender;">.col-md-4</div>
+          <div class="col-md-4" style="background-color:lavenderblush;">.col-md-4</div>
+          <div class="col-md-4" style="background-color:lavender;">.col-md-4</div>
+        </div>
+      </div>
+
+      <h1>Basic Button Example!</h1>
+
+      <button class="btn btn-default">default</button>
+      <button class="btn btn-primary">primary</button>
+      <button class="btn btn-danger">danger</button>
+      <button class="btn btn-success">success</button>
+      <button class="btn btn-info">info</button>
+      <button class="btn btn-warning">warning</button>
+      <button class="btn btn-link">Link</button>
+
+      <div class="container">
+        <h2>Button Sizes</h2>
+        <button type="button" class="btn btn-primary btn-lg">Large</button>
+        <button type="button" class="btn btn-primary btn-md">Medium</button>
+        <button type="button" class="btn btn-primary btn-sm">Small</button>
+        <button type="button" class="btn btn-primary btn-xs">XSmall</button>
+      </div>
+
+
+      <div class="container">
+        <h2>Button States</h2>
+        <button type="button" class="btn btn-primary">Primary Button</button>
+        <button type="button" class="btn btn-primary active">Active Primary</button>
+        <button type="button" class="btn btn-primary disabled">Disabled Primary</button>
+
+      </div>
+
+      <br>
+
+      <div class="container">
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+            <span class="sr-only">70% Complete</span>
+          </div>
+        </div>
+      </div>
+
+
+
+  </body>
+
+</html>
