@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   </head>
 
-  <body background="static/background.jpg" style="padding-top:70px;">
+  <body background="static/background.jpg" style="padding-top:70px;background-position: center;background-repeat: no-repeat;background-size: cover;">
 
     <nav class=" navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
@@ -17,12 +17,13 @@
 
         </div>
         <ul class="nav navbar-nav">
-          <li class="active"> <a href="#grid"> <button class="btn btn-default"> Grid System</button></a></li>
-	  <li class="active"><a href="#alerts"> <button class="btn btn-info"> Alerts </button> </a> </li>
-	  <li class="active"><a href="#endangered"> <button class="btn btn-danger"> Table </button>  </a> </li>
+	  <li class="active"><a href="#signup"> <button class="btn btn-success"> SIGN UP </button>  </a> </li>
+	  <li class="active"><a href="#endangered"> <button class="btn btn-primary"> SPECIES </button>  </a> </li>
+          <li class="active"> <a href="#grid"> <button class="btn btn-info"> MYTHS</button></a></li>
+	  
     </div> </nav> <!-- Mask & flexbox options-->
 
-    <div class="container">
+    <div class="container" id="signup">
       <label for="donations" >Donations:</label>
       <div class="progress" id="donations"> 	
 	<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
@@ -33,7 +34,7 @@
     
     <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
       <!-- Content -->
-      <div class="container">
+      <div class="container" ">
         <!--Grid row-->
         <div class="row mt-5">
           <!--Grid column-->
@@ -117,17 +118,47 @@
 
 
 <div class="container-fluid" id="grid">
-  <h1>Bootstrap Grid System</h1>
-  <p>Resize the browser window to see the effect.</p>
+  <h1>Jellyfish Myths Busted</h1>
+
+
   <div class="row">
-    <div class="col-md-4" style="background-color:lavender;">.col-md-4</div>
-    <div class="col-md-4" style="background-color:lavenderblush;">.col-md-4</div>
-    <div class="col-md-4" style="background-color:lavender;">.col-md-4</div>
+    <div class="col-md-8" style="background-color:lavender;"> Jellyfish are all the same species </div>
+    <div class="col-md-4" style="background-color:red;">MYTH</div>
   </div>
+  
+  <br>
+  <div class="alert alert-info" role="alert">
+    FACT: There are more than 200 documented species of true jellyfish (and many more of their stinging relatives) across the globe. 
+  </div>
+
+  <div class="row">
+    <div class="col-md-8" style="background-color:lavender;">Jellyfish "go after" people</div>
+    <div class="col-md-4" style="background-color:red;">MYTH</div>
+  </div>
+  <br>
+  <div class="alert alert-info" role="alert">
+    FACT: Any contact with jellyfish is incidental. Humans are not on their menu, but when we are in their environment we can get in the way of their tentacles. While jellyfish don't have a brain, they can sense light and have coordinated swimming behaviors, which help keep them in good places to hunt for microscopic plants and fish eggs/larvae, or other prey like fish, worms, and crustaceans.
+  </div>
+
+  <div class="row">
+    <div class="col-md-8" style="background-color:lavender;"> Applying urine to a jellyfish sting can reduce the pain</div>
+    <div class="col-md-4" style="background-color:red;"> MYTH </div>
+  </div>
+
+  <br>
+<div class="alert alert-info" role="alert">
+    Perhaps the most interesting of myths, the use of urine to treat stings has been tested and proven unhelpful. A better idea? Try an acidic liquid like vinegar. There are also several commercially available products marketed for stings. <br>
+
+    What to do if you get stung: First, look for any tentacle adhering to skin, and flush the area well with cold ocean water. Do not rub the sting area because you could inadvertently distribute the venom further into the body. Then vinegar or evidence-based commercial product should be applied if there is continuing pain.
+  </div>
+
 </div>
+
 
 
 
 </body>
 
 </html>
+
+<!-- source: https://www.noaa.gov/stories/fact-vs-fiction-3-things-you-thought-you-knew-about-jellyfish -->
