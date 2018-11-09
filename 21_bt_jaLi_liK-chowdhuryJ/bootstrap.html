@@ -8,8 +8,43 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   </head>
 
-  <body background="static/background.jpg" style="padding-top:70px;background-position: center;background-repeat: no-repeat;background-size: cover;">
+  <body background="static/background.jpg" style="padding-top:70px;background-position: center;background-repeat: no-repeat;background-size: cover; ">
 
+    <div class="container">
+      <h1 class="h1-responsive font-weight-bold">Welcome to JaLi Fish! <br> <small> This web page seeks to give a walkthrough of bootstrap's key features while being informative about jellyfish! </small></h1>
+    </div>
+
+    <hr class="hr-light">
+    
+    <div class="container-fluid">
+      <h2 class="h1-responsive font-weight-bold"> CONTAINERS </h2>
+      <h4>
+		Jellyfish or sea jellies are the informal common names given to the medusa-phase of certain gelatinous members of the subphylum Medusozoa, a major part of the phylum 
+		Cnidaria. Jellyfish are mainly free-swimming marine animals with umbrella-shaped bells and trailing tentacles, although a few are not mobile, being anchored to the seabed by stalks.
+
+		<br>
+		<br>
+		
+	<b>Hey! This text is inside bootstrap's fluid container, which continuously resizes as you change the width of your window/browser!<br>
+	  Try resizing the page to test this out! <br><br>
+
+	Here is code for a container and a fluid container! Both are responsive, but the container is more choppy in resizing than the fluid container! <br></b>
+	<pre><code>
+	    &lt;div class=&quot;container&quot;&gt;    
+	    &lt;h1&gt;Container&lt;/h1&gt;    
+	    &lt;p&gt;These are container content&lt;/p&gt;  
+	    &lt;/div&gt;    
+
+	    &lt;div class=&quot;container-fluid&quot;&gt;    
+	    &lt;h1&gt;Container-fluid&lt;/h1&gt;    
+	    &lt;p&gt;These are container-fluid content&lt;/p&gt;  
+	    &lt;/div&gt;
+	</code></pre>
+
+	<br>
+	</h4>
+    </div>
+    
     <nav class=" navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -21,143 +56,125 @@
 	  <li class="active"><a href="#endangered"> <button class="btn btn-primary"> SPECIES </button>  </a> </li>
           <li class="active"> <a href="#grid"> <button class="btn btn-info"> MYTHS</button></a></li>
 	  
-    </div> </nav> <!-- Mask & flexbox options-->
+    </div> </nav> 
 
-    <div class="container" id="signup">
-      <label for="donations" >Donations:</label>
+    <div class="container-fluid">
+      <label for="donations"> <h2 class="h1-responsive font-weight-bold">PROGRESS BAR</h2>
+	<h4> <b>This is the basic code for a progress bar in bootstrap! </b> </h4>
+      </label>
+      <br>
+      <pre> <code>
+	  &lt;div class=&quot;container&quot;&gt;
+	  &lt;div class=&quot;progress&quot;&gt;
+	  &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;70&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width:70%&quot;&gt;
+	  &lt;span class=&quot;sr-only&quot;&gt;70% Complete&lt;/span&gt;
+	  &lt;/div&gt;
+	  &lt;/div&gt;
+	  &lt;/div&gt;
+      </code> </pre>
+      <h4> <b>We've met 70% of our goal! Sign up to donate to jellyfish! </b></h4>
+      
       <div class="progress" id="donations"> 	
 	<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-	  <span class="sr-only">70% Complete</span>
+	  70% Complete
 	</div>
       </div>
     </div>
     
-    <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
-      <!-- Content -->
-      <div class="container" ">
-        <!--Grid row-->
-        <div class="row mt-5">
-          <!--Grid column-->
-          <div class="col-md-6 mb-5 mt-md-0 mt-5 white-text text-center text-md-left">
-            <h1 class="h1-responsive font-weight-bold wow fadeInLeft" data-wow-delay="0.3s">Sign up to save Jelly Fish Lives! </h1>
-            <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s">
-            <h6 class="mb-3 wow fadeInLeft" data-wow-delay="0.3s">Jellyfish or sea jellies are the informal common names given to the medusa-phase of certain gelatinous members of the subphylum Medusozoa, a major part of the phylum
-              Cnidaria. Jellyfish are mainly free-swimming marine animals with umbrella-shaped bells and trailing tentacles, although a few are not mobile, being anchored to the seabed by stalks.</h6>
-            <a class="btn btn-outline-white wow fadeInLeft" data-wow-delay="0.3s">Learn more</a>
-          </div>
-          <!--Grid column-->
-          <!--Grid column-->
-          <div class="col-md-6 col-xl-5 mb-4">
-            <!--Form-->
-            <div class="card wow fadeInRight" data-wow-delay="0.3s">
-              <div class="card-body">
-                <!--Header-->
-                <div class="container">
-                  <form>
-                    <div class="form-group">
-                      <label for="email">Email:</label>
-                      <input type="email" class="form-control" id="email" placeholder="Enter email" style="width:35vw;">
-                    </div>
-		    
-                    <div class="form-group">
-                      <label for="pwd">Password:</label>
-                      <input type="password" class="form-control" id="pwd" placeholder="Enter password" style="width:35vw;">
-                    </div>
-                    <div class="checkbox">
-                      <label><input type="checkbox"> Remember me</label>
-                    </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
-                  </form>
-                </div>
-                <!--Body-->
-              </div>
-            </div>
-            <!--/.Form-->
-          </div>
-          <!--Grid column-->
-        </div>
-        <!--Grid row-->
-      </div>
-      <!-- Content -->
+
+    <div class="container" id="signup">
+      <form>
+	<div class="form-group">
+	  <label for="email">Email:</label>
+	  <input type="email" class="form-control" id="email" placeholder="Enter email" style="width:35vw;">
+	</div>
+	
+	<div class="form-group">
+	  <label for="pwd">Password:</label>
+	  <input type="password" class="form-control" id="pwd" placeholder="Enter password" style="width:35vw;">
+	</div>
+	<div class="checkbox">
+	  <label><input type="checkbox"> Remember me</label>
+	</div>
+	<button type="submit" class="btn btn-default">Submit</button>
+      </form>
     </div>
-    <!-- Mask & flexbox options-->
-</div>
 
-<div class="container" id="endangered">
-  <h1>Endangered Jelly Fish Types</h1>
+    <div class="container" id="endangered">
+      <h1>Endangered Jelly Fish Types</h1>
 
-  <table class="table table-dark">
-    <tr>
-      <th>Species</th>
-      <th>Population</th>
-      <th>Image</th>
-    </tr>
-    <tr>
-      <td>Moon Jellies</td>
-      <td>164,000</td>
-      <td><img src="static/moonjellies.jpg" class="img-rounded" alt="logo" width="70 " height="70"></td>
-    </tr>
-    <tr>
-      <td>Box Jellyfish</td>
-      <td>34,000</td>
-      <td><img src="static/boxjellyfish.jpg" class="img-rounded" alt="logo" width="70 " height="70"></td>
-    </tr>
-    <tr>
-      <td>Immortal Jellyfish</td>
-      <td>68,000</td>
-      <td><img src="static/immortal.jpg" class="img-rounded" alt="logo" width="70 " height="70"></td>
-    </tr>
-    <tr>
-      <td>Cnidaria</td>
-      <td>225,000</td>
-      <td><img src="static/cnidaria.png" class="img-rounded" alt="logo" width="70 " height="70"></td>
-    </tr>
-  </table>
+      <table class="table table-dark">
+	<tr>
+	  <th>Species</th>
+	  <th>Population</th>
+	  <th>Image</th>
+	</tr>
+	<tr>
+	  <td>Moon Jellies</td>
+	  <td>164,000</td>
+	  <td><img src="static/moonjellies.jpg" class="img-rounded" alt="logo" width="70 " height="70"></td>
+	</tr>
+	<tr>
+	  <td>Box Jellyfish</td>
+	  <td>34,000</td>
+	  <td><img src="static/boxjellyfish.jpg" class="img-rounded" alt="logo" width="70 " height="70"></td>
+	</tr>
+	<tr>
+	  <td>Immortal Jellyfish</td>
+	  <td>68,000</td>
+	  <td><img src="static/immortal.jpg" class="img-rounded" alt="logo" width="70 " height="70"></td>
+	</tr>
+	<tr>
+	  <td>Cnidaria</td>
+	  <td>225,000</td>
+	  <td><img src="static/cnidaria.png" class="img-rounded" alt="logo" width="70 " height="70"></td>
+	</tr>
+      </table>
 
-</div>
+    </div>
 
 
-<div class="container-fluid" id="grid">
-  <h1>Jellyfish Myths Busted</h1>
+    <div class="container-fluid" id="grid">
+      <h1>Jellyfish Myths Busted</h1>
 
 
-  <div class="row">
-    <div class="col-md-8" style="background-color:lavender;"> Jellyfish are all the same species </div>
-    <div class="col-md-4" style="background-color:red;">MYTH</div>
-  </div>
-  
-  <br>
-  <div class="alert alert-info" role="alert">
-    FACT: There are more than 200 documented species of true jellyfish (and many more of their stinging relatives) across the globe. 
-  </div>
+      <div class="row">
+	<div class="col-md-8" style="background-color:lavender;"> Jellyfish are all the same species </div>
+	<div class="col-md-4" style="background-color:red;">MYTH</div>
+      </div>
+      
+      <br>
+      <div class="alert alert-info" role="alert">
+	FACT: There are more than 200 documented species of true jellyfish (and many more of their stinging relatives) across the globe. 
+      </div>
 
-  <div class="row">
-    <div class="col-md-8" style="background-color:lavender;">Jellyfish "go after" people</div>
-    <div class="col-md-4" style="background-color:red;">MYTH</div>
-  </div>
-  <br>
-  <div class="alert alert-info" role="alert">
-    FACT: Any contact with jellyfish is incidental. Humans are not on their menu, but when we are in their environment we can get in the way of their tentacles. While jellyfish don't have a brain, they can sense light and have coordinated swimming behaviors, which help keep them in good places to hunt for microscopic plants and fish eggs/larvae, or other prey like fish, worms, and crustaceans.
-  </div>
+      <div class="row">
+	<div class="col-md-8" style="background-color:lavender;">Jellyfish "go after" people</div>
+	<div class="col-md-4" style="background-color:red;">MYTH</div>
+      </div>
+      <br>
+      <div class="alert alert-info" role="alert">
+	FACT: Any contact with jellyfish is incidental. Humans are not on their menu, but when we are in their environment we can get in the way of their tentacles. While jellyfish don't have a brain, they can sense light and have coordinated swimming behaviors, which help keep them in good places to hunt for microscopic plants and fish eggs/larvae, or other prey like fish, worms, and crustaceans.
+      </div>
 
-  <div class="row">
-    <div class="col-md-8" style="background-color:lavender;"> Applying urine to a jellyfish sting can reduce the pain</div>
-    <div class="col-md-4" style="background-color:red;"> MYTH </div>
-  </div>
+      <div class="row">
+	<div class="col-md-8" style="background-color:lavender;"> Applying urine to a jellyfish sting can reduce the pain</div>
+	<div class="col-md-4" style="background-color:red;"> MYTH </div>
+      </div>
 
-  <br>
-<div class="alert alert-info" role="alert">
-    Perhaps the most interesting of myths, the use of urine to treat stings has been tested and proven unhelpful. A better idea? Try an acidic liquid like vinegar. There are also several commercially available products marketed for stings. <br>
+      <br>
+      <div class="alert alert-info" role="alert">
+	Perhaps the most interesting of myths, the use of urine to treat stings has been tested and proven unhelpful. A better idea? Try an acidic liquid like vinegar. There are also several commercially available products marketed for stings. <br>
 
-    What to do if you get stung: First, look for any tentacle adhering to skin, and flush the area well with cold ocean water. Do not rub the sting area because you could inadvertently distribute the venom further into the body. Then vinegar or evidence-based commercial product should be applied if there is continuing pain.
-  </div>
+	What to do if you get stung: First, look for any tentacle adhering to skin, and flush the area well with cold ocean water. Do not rub the sting area because you could inadvertently distribute the venom further into the body. Then vinegar or evidence-based commercial product should be applied if there is continuing pain.
+      </div>
 
-</div>
+    </div>
 
 
 
 
-</body>
+  </body>
 
 </html>
 
