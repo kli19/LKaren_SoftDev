@@ -6,159 +6,333 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+      div.container-fluid{
+      padding-top:70px;
+      margin-top:-70px;
+      }
+    </style>
   </head>
 
-  <body background="static/background.jpg" style="padding-top:70px;background-position: center;background-repeat: no-repeat;background-size: cover;">
+  <body background="static/background.jpg" style="padding-top:70px;background-position: center;background-repeat: no-repeat;background-size: cover; ">
 
-    <nav class=" navbar navbar-inverse navbar-fixed-top">
+
+    <div class="container">
+      <h1 class="h1-responsive font-weight-bold">Welcome to JaLi Fish! <br> <small> This web page seeks to give a walkthrough of bootstrap's key features while being informative about jellyfish! </small></h1>
+    </div>
+
+    <hr class="hr-light">
+
+    <!--NAVBAR-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="#">JaLi Fish</a>
 
         </div>
         <ul class="nav navbar-nav">
-	  <li class="active"><a href="#signup"> <button class="btn btn-success"> SIGN UP </button>  </a> </li>
-	  <li class="active"><a href="#endangered"> <button class="btn btn-primary"> SPECIES </button>  </a> </li>
-          <li class="active"> <a href="#grid"> <button class="btn btn-info"> MYTHS</button></a></li>
-	  
-    </div> </nav> <!-- Mask & flexbox options-->
+	  <li class="active"><a href="#navbar"> <button class="btn btn-info"> NAVBAR </button>  </a> </li>
+	  <li class="active"><a href="#form"> <button class="btn btn-info"> FORMS </button>  </a> </li>
+          <li class="active"> <a href="#container"> <button class="btn btn-info"> CONTAINERS</button></a></li>
+	  <li class="active"> <a href="#progress"> <button class="btn btn-info"> PROGRESS BARS</button></a></li>
+	  <li class="active"> <a href="#table"> <button class="btn btn-info"> TABLES</button></a></li>
+	  <li class="active"> <a href="#grid"> <button class="btn btn-info"> GRID</button></a></li>
+	  <li class="active"> <a href="#alert"> <button class="btn btn-info"> ALERTS</button></a></li>
+	</ul>
+	
+    </div> </nav>
 
-    <div class="container" id="signup">
-      <label for="donations" >Donations:</label>
-      <div class="progress" id="donations"> 	
-	<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-	  <span class="sr-only">70% Complete</span>
-	</div>
-      </div>
+    <div class="container-fluid" id="navbar">
+      <h2 class="h2-responsive font-weight-bold"> NAVBAR <br> </h2>
+      <h4><b>By default, bootstrap's navigation headers are fluid, responsive, and hidden when printing. These characteristics can be modified, but for now, let's look at how to code a basic one.</b> </h4>
+
+      <pre><code>
+	  &lt;nav class=&quot;navbar navbar-default&quot;&gt;
+	  &lt;div class=&quot;container-fluid&quot;&gt;
+	  &lt;div class=&quot;navbar-header&quot;&gt;
+	  &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;WebSiteName&lt;/a&gt;
+	  &lt;/div&gt;
+	  &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+	  &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+	  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Page 1&lt;/a&gt;&lt;/li&gt;
+	  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Page 2&lt;/a&gt;&lt;/li&gt;
+	  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Page 3&lt;/a&gt;&lt;/li&gt;
+	  &lt;/ul&gt;
+	  &lt;/div&gt;
+	  &lt;/nav&gt;
+      </code></pre>
+      
     </div>
     
-    <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
-      <!-- Content -->
-      <div class="container" ">
-        <!--Grid row-->
-        <div class="row mt-5">
-          <!--Grid column-->
-          <div class="col-md-6 mb-5 mt-md-0 mt-5 white-text text-center text-md-left">
-            <h1 class="h1-responsive font-weight-bold wow fadeInLeft" data-wow-delay="0.3s">Sign up to save Jelly Fish Lives! </h1>
-            <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s">
-            <h6 class="mb-3 wow fadeInLeft" data-wow-delay="0.3s">Jellyfish or sea jellies are the informal common names given to the medusa-phase of certain gelatinous members of the subphylum Medusozoa, a major part of the phylum
-              Cnidaria. Jellyfish are mainly free-swimming marine animals with umbrella-shaped bells and trailing tentacles, although a few are not mobile, being anchored to the seabed by stalks.</h6>
-            <a class="btn btn-outline-white wow fadeInLeft" data-wow-delay="0.3s">Learn more</a>
-          </div>
-          <!--Grid column-->
-          <!--Grid column-->
-          <div class="col-md-6 col-xl-5 mb-4">
-            <!--Form-->
-            <div class="card wow fadeInRight" data-wow-delay="0.3s">
-              <div class="card-body">
-                <!--Header-->
-                <div class="container">
-                  <form>
-                    <div class="form-group">
-                      <label for="email">Email:</label>
-                      <input type="email" class="form-control" id="email" placeholder="Enter email" style="width:35vw;">
-                    </div>
-		    
-                    <div class="form-group">
-                      <label for="pwd">Password:</label>
-                      <input type="password" class="form-control" id="pwd" placeholder="Enter password" style="width:35vw;">
-                    </div>
-                    <div class="checkbox">
-                      <label><input type="checkbox"> Remember me</label>
-                    </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
-                  </form>
-                </div>
-                <!--Body-->
-              </div>
-            </div>
-            <!--/.Form-->
-          </div>
-          <!--Grid column-->
-        </div>
-        <!--Grid row-->
-      </div>
-      <!-- Content -->
+
+    <hr class="hr-light">
+
+    <div class="container-fluid" id="form">
+      
+      <h2 class="h2-responsive font-weight-bold"> FORMS <br> <small> Interested in our cause? Signup to donate and receive exclusive information!</small></h2>
+      <form>
+	<div class="form-group">
+	  <label for="email">Email:</label>
+	  <input type="email" class="form-control" id="email" placeholder="Enter email">
+	</div>
+	
+	<div class="form-group">
+	  <label for="pwd">Password:</label>
+	  <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+	</div>
+	<div class="checkbox">
+	  <label><input type="checkbox"> Remember me</label>
+	</div>
+	<button type="submit" class="btn btn-default">Submit</button>
+      </form>
+
+      <br>
+      <h4> <b> You can make vertical forms (default), horizontal forms, or inline forms. Here is how this form was made! </b></h4>
+      <pre><code>
+	  &lt;div class=&quot;container&quot;&gt;
+	  &lt;form&gt;
+	  &lt;div class=&quot;form-group&quot;&gt;
+	  &lt;label for=&quot;email&quot;&gt;Email:&lt;/label&gt;
+	  &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;email&quot; placeholder=&quot;Enter email&quot;&gt;
+	  &lt;/div&gt;
+	  &lt;div class=&quot;form-group&quot;&gt;
+	  &lt;label for=&quot;pwd&quot;&gt;Password:&lt;/label&gt;
+	  &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;pwd&quot; placeholder=&quot;Enter password&quot;&gt;
+	  &lt;/div&gt;
+	  &lt;div class=&quot;checkbox&quot;&gt;
+	  &lt;label&gt;&lt;input type=&quot;checkbox&quot;&gt; Remember me&lt;/label&gt;
+	  &lt;/div&gt;
+	  &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Submit&lt;/button&gt;
+	  &lt;/form&gt;
+	  &lt;/div&gt;
+      </code>  </pre>
+      
     </div>
-    <!-- Mask & flexbox options-->
-</div>
 
-<div class="container" id="endangered">
-  <h1>Endangered Jelly Fish Types</h1>
+    <hr class="hr-light">
+    
+    <div class="container-fluid" id="container">
+      <h2 class="h2-responsive font-weight-bold"> CONTAINERS </h2>
+      <h4>
+	Jellyfish or sea jellies are the informal common names given to the medusa-phase of certain gelatinous members of the subphylum Medusozoa, a major part of the phylum 
+	Cnidaria. Jellyfish are mainly free-swimming marine animals with umbrella-shaped bells and trailing tentacles, although a few are not mobile, being anchored to the seabed by stalks.
 
-  <table class="table table-dark">
-    <tr>
-      <th>Species</th>
-      <th>Population</th>
-      <th>Image</th>
-    </tr>
-    <tr>
-      <td>Moon Jellies</td>
-      <td>164,000</td>
-      <td><img src="static/moonjellies.jpg" class="img-rounded" alt="logo" width="70 " height="70"></td>
-    </tr>
-    <tr>
-      <td>Box Jellyfish</td>
-      <td>34,000</td>
-      <td><img src="static/boxjellyfish.jpg" class="img-rounded" alt="logo" width="70 " height="70"></td>
-    </tr>
-    <tr>
-      <td>Immortal Jellyfish</td>
-      <td>68,000</td>
-      <td><img src="static/immortal.jpg" class="img-rounded" alt="logo" width="70 " height="70"></td>
-    </tr>
-    <tr>
-      <td>Cnidaria</td>
-      <td>225,000</td>
-      <td><img src="static/cnidaria.png" class="img-rounded" alt="logo" width="70 " height="70"></td>
-    </tr>
-  </table>
+	<br>
+	<br>
+	
+	<b>Hey! The chunks of text on this page are written inside bootstrap's containers, which continuously resizes as you change the width of your window/browser!<br>
+	  Try resizing the page to test this out! <br><br>
 
-</div>
+	  Here is code for a container and a fluid container! Both are responsive, but the container is more choppy in resizing than the fluid container! <br></b><br>
+	<pre><code>
+	    &lt;div class=&quot;container&quot;&gt;    
+	    &lt;h1&gt;Container&lt;/h1&gt;    
+	    &lt;p&gt;These are container content&lt;/p&gt;  
+	    &lt;/div&gt;    
+
+	    &lt;div class=&quot;container-fluid&quot;&gt;    
+	    &lt;h1&gt;Container-fluid&lt;/h1&gt;    
+	    &lt;p&gt;These are container-fluid content&lt;/p&gt;  
+	    &lt;/div&gt;
+	</code></pre>
+
+	<br>
+      </h4>
+    </div>
+    
+    <hr class="hr-light">
+    <div class="container-fluid" id="progress">
+      <label for="donations"> <h2 class="h1-responsive font-weight-bold">PROGRESS BARS</h2>
+	<h4> <b>We've met 70% of our goal! Sign up to donate to jellyfish! </b></h4>
+      </label>
+      <div class="progress" id="donations"> 	
+	<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+	  70% Complete
+	</div>
+      </div>
+      <h4> <b>This is the basic code for a progress bar in bootstrap! </b> </h4>
+      <pre> <code>
+	  &lt;div class=&quot;container&quot;&gt;
+	  &lt;div class=&quot;progress&quot;&gt;
+	  &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;70&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width:70%&quot;&gt;
+	  70% Complete
+	  &lt;/div&gt;
+	  &lt;/div&gt;
+	  &lt;/div&gt;
+      </code> </pre>
+    </div>
+
+    <hr class="hr-light">
+    <div class="container-fluid" id="table">
+      <h1>TABLE of Endangered Jellyfish Types</h1>
+
+      <table class="table table-dark">
+	<tr>
+	  <th>Species</th>
+	  <th>Population</th>
+	  <th>Image</th>
+	</tr>
+	<tr>
+	  <td>Moon Jellies</td>
+	  <td>164,000</td>
+	  <td><img src="static/moonjellies.jpg" class="img-rounded" alt="logo" width="70 " height="70"></td>
+	</tr>
+	<tr>
+	  <td>Box Jellyfish</td>
+	  <td>34,000</td>
+	  <td><img src="static/boxjellyfish.jpg" class="img-rounded" alt="logo" width="70 " height="70"></td>
+	</tr>
+	<tr>
+	  <td>Immortal Jellyfish</td>
+	  <td>68,000</td>
+	  <td><img src="static/immortal.jpg" class="img-rounded" alt="logo" width="70 " height="70"></td>
+	</tr>
+	<tr>
+	  <td>Cnidaria</td>
+	  <td>225,000</td>
+	  <td><img src="static/cnidaria.png" class="img-rounded" alt="logo" width="70 " height="70"></td>
+	</tr>
+      </table>
+
+    <h4><b>Bootstrap tables are opt-in, meaning you have to actively add a table class to turn a table into a Bootstrap table. Here is how to code a basic table!</b></h4>
+
+    <pre><code>
+	&lt;table class=&quot;table&quot;&gt;  
+	&lt;tr&gt;&lt;th&gt;#&lt;/th&gt;&lt;th&gt;a&lt;/th&gt;&lt;th&gt;Age&lt;/th&gt;&lt;/tr&gt;  
+	&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;b&lt;/td&gt;&lt;td&gt;21&lt;/td&gt;&lt;/tr&gt;  
+	&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;c&lt;/td&gt;&lt;td&gt;25&lt;/td&gt;&lt;/tr&gt;  
+	&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;d&lt;/td&gt;&lt;td&gt;26&lt;/td&gt;&lt;/tr&gt;  
+	&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;e&lt;/td&gt;&lt;td&gt;22&lt;/td&gt;&lt;/tr&gt;  
+	&lt;/table&gt;
+    </code></pre>
+
+    </div>
+
+    <hr class="hr-light">
+
+    <div class="container-fluid">
+      <h1>GRID & ALERTS: Jellyfish Myths Busted</h1>
 
 
-<div class="container-fluid" id="grid">
-  <h1>Jellyfish Myths Busted</h1>
+      <div class="row">
+	<div class="col-md-8" style="background-color:lavender;"> Jellyfish are all the same species </div>
+	<div class="col-md-4" style="background-color:red;">MYTH</div>
+      </div>
+      
+      <br>
+      <div class="alert alert-info" role="alert">
+	FACT: There are more than 200 documented species of true jellyfish (and many more of their stinging relatives) across the globe. 
+      </div>
 
+      <div class="row">
+	<div class="col-md-8" style="background-color:lavender;">Jellyfish "go after" people</div>
+	<div class="col-md-4" style="background-color:red;">MYTH</div>
+      </div>
+      <br>
+      <div class="alert alert-info" role="alert">
+	FACT: Any contact with jellyfish is incidental. Humans are not on their menu, but when we are in their environment we can get in the way of their tentacles. While jellyfish don't have a brain, they can sense light and have coordinated swimming behaviors, which help keep them in good places to hunt for microscopic plants and fish eggs/larvae, or other prey like fish, worms, and crustaceans.
+      </div>
 
-  <div class="row">
-    <div class="col-md-8" style="background-color:lavender;"> Jellyfish are all the same species </div>
-    <div class="col-md-4" style="background-color:red;">MYTH</div>
-  </div>
-  
-  <br>
-  <div class="alert alert-info" role="alert">
-    FACT: There are more than 200 documented species of true jellyfish (and many more of their stinging relatives) across the globe. 
-  </div>
+      <div class="row">
+	<div class="col-md-8" style="background-color:lavender;"> Applying urine to a jellyfish sting can reduce the pain</div>
+	<div class="col-md-4" style="background-color:red;"> MYTH </div>
+      </div>
 
-  <div class="row">
-    <div class="col-md-8" style="background-color:lavender;">Jellyfish "go after" people</div>
-    <div class="col-md-4" style="background-color:red;">MYTH</div>
-  </div>
-  <br>
-  <div class="alert alert-info" role="alert">
-    FACT: Any contact with jellyfish is incidental. Humans are not on their menu, but when we are in their environment we can get in the way of their tentacles. While jellyfish don't have a brain, they can sense light and have coordinated swimming behaviors, which help keep them in good places to hunt for microscopic plants and fish eggs/larvae, or other prey like fish, worms, and crustaceans.
-  </div>
+      <br>
+      <div class="alert alert-info" role="alert">
+	FACT: Perhaps the most interesting of myths, the use of urine to treat stings has been tested and proven unhelpful. A better idea? Try an acidic liquid like vinegar. There are also several commercially available products marketed for stings. <br>
 
-  <div class="row">
-    <div class="col-md-8" style="background-color:lavender;"> Applying urine to a jellyfish sting can reduce the pain</div>
-    <div class="col-md-4" style="background-color:red;"> MYTH </div>
-  </div>
+	What to do if you get stung: First, look for any tentacle adhering to skin, and flush the area well with cold ocean water. Do not rub the sting area because you could inadvertently distribute the venom further into the body. Then vinegar or evidence-based commercial product should be applied if there is continuing pain.
+      </div>
 
-  <br>
-<div class="alert alert-info" role="alert">
-    Perhaps the most interesting of myths, the use of urine to treat stings has been tested and proven unhelpful. A better idea? Try an acidic liquid like vinegar. There are also several commercially available products marketed for stings. <br>
+      <br>
+      <div id="grid">
+	<h2 class="h2-responsive font-weight-bold"> GRID SYSTEM </h2>
+	<h4><b>Bootstrap uses a fully responsive grid system of containers, rows, and columns to format content.<br>
+	    Some rules to follow when using the grid system:
 
-    What to do if you get stung: First, look for any tentacle adhering to skin, and flush the area well with cold ocean water. Do not rub the sting area because you could inadvertently distribute the venom further into the body. Then vinegar or evidence-based commercial product should be applied if there is continuing pain.
-  </div>
+	    <ul>
+	      <li >Place rows inside containers </li>
+	      <li >Only columns may be the immediate children of rows </li>
+	      <li >The grid system allows you to divide a row into 12 columns of equal width. You can combine these columns, but the number of columns the containers in a single row span across cannot exceed 12. </li>
+	    </ul>
 
-</div>
+	    Resize the browser window to see the effect on the grid above!<br><br> Here is sample grid code!</b></h4>
 
+	<pre><code>
+	    &lt;div class=&quot;container-fluid&quot;&gt;
+	    &lt;div class=&quot;row&quot;&gt;
+	    &lt;div class=&quot;col-md-2&quot; style=&quot;background-color:lavender;&quot;&gt;.col-md-2&lt;/div&gt;
+	    &lt;div class=&quot;col-md-4&quot; style=&quot;background-color:lavenderblush;&quot;&gt;.col-md-4&lt;/div&gt;
+	    &lt;div class=&quot;col-md-6&quot; style=&quot;background-color:lavender;&quot;&gt;.col-md-6&lt;/div&gt;
+	    &lt;/div&gt;
+	    &lt;/div&gt;
+	</code></pre>
 
+	<h4><b> This is the result of the code!</b></h4>
 
+	<div class="container-fluid">
+	  <div class="row">
+	    <div class="col-md-2" style="background-color:lavender;">.col-sm-2</div>
+	    <div class="col-sm-4" style="background-color:lavenderblush;">.col-sm-4</div>
+	    <div class="col-sm-6" style="background-color:lavender;">.col-sm-6</div>
+	  </div>
+	</div>
+	
+      </div>
+      <br>
 
-</body>
+      <div id="alert">
+	<h2 class="h2-responsive font-weight-bold"> ALERTS </h2>
+	<h4><b>Alerts provide feedback for user actions. Take a look at this code:
+	<pre><code>
+	    &lt;div class=&quot;container&quot;&gt;  
+	    &lt;div class=&quot;alert alert-success&quot;&gt;  
+	    &lt;strong&gt;Success!&lt;/strong&gt; Well done its submitted.  
+	    &lt;/div&gt;  
+	    &lt;div class=&quot;alert alert-info&quot;&gt;  
+	    &lt;strong&gt;Info!&lt;/strong&gt; take this info.  
+	    &lt;/div&gt;  
+	    &lt;div class=&quot;alert alert-warning&quot;&gt;  
+	    &lt;strong&gt;Warning!&lt;/strong&gt; Dont submit this.  
+	    &lt;/div&gt;  
+	    &lt;div class=&quot;alert alert-danger&quot;&gt;  
+	    &lt;strong&gt;Danger!&lt;/strong&gt; Change few things.  
+	    &lt;/div&gt;  
+	    &lt;/div&gt;  
+	</code></pre>
+	<br>
+	This code results in the following alerts (though there are also the primary, secondary, light, and dark alerts): <br></b></h4>
+
+	<div>  
+	  <div class="alert alert-success">  
+	    <strong>Success!</strong> Well done its submitted.  
+	  </div>  
+	  <div class="alert alert-info">  
+	    <strong>Info!</strong> take this info.  
+	  </div>  
+	  <div class="alert alert-warning">  
+	    <strong>Warning!</strong> Dont submit this.  
+	  </div>  
+	  <div class="alert alert-danger">  
+	    <strong>Danger!</strong> Change few things.  
+	  </div>  
+	</div>  
+	
+      </div>
+      
+    </div>
+
+    <div class="container">
+      <h1 class="h1-responsive font-weight-bold">This is the end of our page! <br> <small> Hope you enjoyed your time here! </small></h1>
+    </div>
+
+  </body>
 
 </html>
 
-<!-- source: https://www.noaa.gov/stories/fact-vs-fiction-3-things-you-thought-you-knew-about-jellyfish -->
+<!-- sources: 
+https://www.noaa.gov/stories/fact-vs-fiction-3-things-you-thought-you-knew-about-jellyfish
+https://www.sitesbay.com/bootstrap/index
+https://getbootstrap.com
+ -->
