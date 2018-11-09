@@ -6,6 +6,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+      div.container-fluid{
+      padding-top:70px;
+      margin-top:-70px;
+      }
+    </style>
   </head>
 
   <body background="static/background.jpg" style="padding-top:70px;background-position: center;background-repeat: no-repeat;background-size: cover; ">
@@ -25,12 +31,18 @@
 
         </div>
         <ul class="nav navbar-nav">
-	  <li class="active"><a href="#signup"> <button class="btn btn-success"> SIGN UP </button>  </a> </li>
-	  <li class="active"><a href="#endangered"> <button class="btn btn-primary"> SPECIES </button>  </a> </li>
-          <li class="active"> <a href="#grid"> <button class="btn btn-info"> MYTHS</button></a></li>	  
+	  <li class="active"><a href="#navbar"> <button class="btn btn-info"> NAVBAR </button>  </a> </li>
+	  <li class="active"><a href="#form"> <button class="btn btn-info"> FORMS </button>  </a> </li>
+          <li class="active"> <a href="#container"> <button class="btn btn-info"> CONTAINERS</button></a></li>
+	  <li class="active"> <a href="#progress"> <button class="btn btn-info"> PROGRESS BARS</button></a></li>
+	  <li class="active"> <a href="#table"> <button class="btn btn-info"> TABLES</button></a></li>
+	  <li class="active"> <a href="#grid"> <button class="btn btn-info"> GRID</button></a></li>
+	  <li class="active"> <a href="#alert"> <button class="btn btn-info"> ALERTS</button></a></li>
+	</ul>
+	
     </div> </nav>
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="navbar">
       <h2 class="h2-responsive font-weight-bold"> NAVBAR <br> </h2>
       <h4><b>By default, bootstrap's navigation headers are fluid, responsive, and hidden when printing. These characteristics can be modified, but for now, let's look at how to code a basic one.</b> </h4>
 
@@ -55,7 +67,7 @@
 
     <hr class="hr-light">
 
-    <div class="container-fluid" id="signup">
+    <div class="container-fluid" id="form">
       
       <h2 class="h2-responsive font-weight-bold"> FORMS <br> <small> Interested in our cause? Signup to donate and receive exclusive information!</small></h2>
       <form>
@@ -99,7 +111,7 @@
 
     <hr class="hr-light">
     
-    <div class="container-fluid">
+    <div class="container-fluid" id="container">
       <h2 class="h2-responsive font-weight-bold"> CONTAINERS </h2>
       <h4>
 	Jellyfish or sea jellies are the informal common names given to the medusa-phase of certain gelatinous members of the subphylum Medusozoa, a major part of the phylum 
@@ -129,7 +141,7 @@
     </div>
     
     <hr class="hr-light">
-    <div class="container-fluid">
+    <div class="container-fluid" id="progress">
       <label for="donations"> <h2 class="h1-responsive font-weight-bold">PROGRESS BARS</h2>
 	<h4> <b>We've met 70% of our goal! Sign up to donate to jellyfish! </b></h4>
       </label>
@@ -151,7 +163,7 @@
     </div>
 
     <hr class="hr-light">
-    <div class="container-fluid" id="endangered">
+    <div class="container-fluid" id="table">
       <h1>TABLE of Endangered Jellyfish Types</h1>
 
       <table class="table table-dark">
@@ -196,8 +208,10 @@
 
     </div>
 
-    <div class="container-fluid" id="grid">
-      <h1>Jellyfish Myths Busted</h1>
+    <hr class="hr-light">
+
+    <div class="container-fluid">
+      <h1>GRID & ALERTS: Jellyfish Myths Busted</h1>
 
 
       <div class="row">
@@ -226,15 +240,92 @@
 
       <br>
       <div class="alert alert-info" role="alert">
-	Perhaps the most interesting of myths, the use of urine to treat stings has been tested and proven unhelpful. A better idea? Try an acidic liquid like vinegar. There are also several commercially available products marketed for stings. <br>
+	FACT: Perhaps the most interesting of myths, the use of urine to treat stings has been tested and proven unhelpful. A better idea? Try an acidic liquid like vinegar. There are also several commercially available products marketed for stings. <br>
 
 	What to do if you get stung: First, look for any tentacle adhering to skin, and flush the area well with cold ocean water. Do not rub the sting area because you could inadvertently distribute the venom further into the body. Then vinegar or evidence-based commercial product should be applied if there is continuing pain.
       </div>
 
+      <br>
+      <div id="grid">
+	<h2 class="h2-responsive font-weight-bold"> GRID SYSTEM </h2>
+	<h4><b>Bootstrap uses a fully responsive grid system of containers, rows, and columns to format content.<br>
+	    Some rules to follow when using the grid system:
+
+	    <ul>
+	      <li >Place rows inside containers </li>
+	      <li >Only columns may be the immediate children of rows </li>
+	      <li >The grid system allows you to divide a row into 12 columns of equal width. You can combine these columns, but the number of columns the containers in a single row span across cannot exceed 12. </li>
+	    </ul>
+
+	    Resize the browser window to see the effect on the grid above!<br><br> Here is sample grid code!</b></h4>
+
+	<pre><code>
+	    &lt;div class=&quot;container-fluid&quot;&gt;
+	    &lt;div class=&quot;row&quot;&gt;
+	    &lt;div class=&quot;col-md-2&quot; style=&quot;background-color:lavender;&quot;&gt;.col-md-2&lt;/div&gt;
+	    &lt;div class=&quot;col-md-4&quot; style=&quot;background-color:lavenderblush;&quot;&gt;.col-md-4&lt;/div&gt;
+	    &lt;div class=&quot;col-md-6&quot; style=&quot;background-color:lavender;&quot;&gt;.col-md-6&lt;/div&gt;
+	    &lt;/div&gt;
+	    &lt;/div&gt;
+	</code></pre>
+
+	<h4><b> This is the result of the code!</b></h4>
+
+	<div class="container-fluid">
+	  <div class="row">
+	    <div class="col-md-2" style="background-color:lavender;">.col-sm-2</div>
+	    <div class="col-sm-4" style="background-color:lavenderblush;">.col-sm-4</div>
+	    <div class="col-sm-6" style="background-color:lavender;">.col-sm-6</div>
+	  </div>
+	</div>
+	
+      </div>
+      <br>
+
+      <div id="alert">
+	<h2 class="h2-responsive font-weight-bold"> ALERTS </h2>
+	<h4><b>Alerts provide feedback for user actions. Take a look at this code:
+	<pre><code>
+	    &lt;div class=&quot;container&quot;&gt;  
+	    &lt;div class=&quot;alert alert-success&quot;&gt;  
+	    &lt;strong&gt;Success!&lt;/strong&gt; Well done its submitted.  
+	    &lt;/div&gt;  
+	    &lt;div class=&quot;alert alert-info&quot;&gt;  
+	    &lt;strong&gt;Info!&lt;/strong&gt; take this info.  
+	    &lt;/div&gt;  
+	    &lt;div class=&quot;alert alert-warning&quot;&gt;  
+	    &lt;strong&gt;Warning!&lt;/strong&gt; Dont submit this.  
+	    &lt;/div&gt;  
+	    &lt;div class=&quot;alert alert-danger&quot;&gt;  
+	    &lt;strong&gt;Danger!&lt;/strong&gt; Change few things.  
+	    &lt;/div&gt;  
+	    &lt;/div&gt;  
+	</code></pre>
+	<br>
+	This code results in the following alerts (though there are also the primary, secondary, light, and dark alerts): <br></b></h4>
+
+	<div>  
+	  <div class="alert alert-success">  
+	    <strong>Success!</strong> Well done its submitted.  
+	  </div>  
+	  <div class="alert alert-info">  
+	    <strong>Info!</strong> take this info.  
+	  </div>  
+	  <div class="alert alert-warning">  
+	    <strong>Warning!</strong> Dont submit this.  
+	  </div>  
+	  <div class="alert alert-danger">  
+	    <strong>Danger!</strong> Change few things.  
+	  </div>  
+	</div>  
+	
+      </div>
+      
     </div>
 
-
-
+    <div class="container">
+      <h1 class="h1-responsive font-weight-bold">This is the end of our page! <br> <small> Hope you enjoyed your time here! </small></h1>
+    </div>
 
   </body>
 
