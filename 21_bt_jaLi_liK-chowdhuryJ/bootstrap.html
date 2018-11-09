@@ -10,25 +10,108 @@
 
   <body background="static/background.jpg" style="padding-top:70px;background-position: center;background-repeat: no-repeat;background-size: cover; ">
 
+
     <div class="container">
       <h1 class="h1-responsive font-weight-bold">Welcome to JaLi Fish! <br> <small> This web page seeks to give a walkthrough of bootstrap's key features while being informative about jellyfish! </small></h1>
     </div>
 
     <hr class="hr-light">
+
+    <!--NAVBAR-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">JaLi Fish</a>
+
+        </div>
+        <ul class="nav navbar-nav">
+	  <li class="active"><a href="#signup"> <button class="btn btn-success"> SIGN UP </button>  </a> </li>
+	  <li class="active"><a href="#endangered"> <button class="btn btn-primary"> SPECIES </button>  </a> </li>
+          <li class="active"> <a href="#grid"> <button class="btn btn-info"> MYTHS</button></a></li>	  
+    </div> </nav>
+
+    <div class="container-fluid">
+      <h2 class="h2-responsive font-weight-bold"> NAVBAR <br> </h2>
+      <h4><b>By default, bootstrap's navigation headers are fluid, responsive, and hidden when printing. These characteristics can be modified, but for now, let's look at how to code a basic one.</b> </h4>
+
+      <pre><code>
+	  &lt;nav class=&quot;navbar navbar-default&quot;&gt;
+	  &lt;div class=&quot;container-fluid&quot;&gt;
+	  &lt;div class=&quot;navbar-header&quot;&gt;
+	  &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;WebSiteName&lt;/a&gt;
+	  &lt;/div&gt;
+	  &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+	  &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+	  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Page 1&lt;/a&gt;&lt;/li&gt;
+	  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Page 2&lt;/a&gt;&lt;/li&gt;
+	  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Page 3&lt;/a&gt;&lt;/li&gt;
+	  &lt;/ul&gt;
+	  &lt;/div&gt;
+	  &lt;/nav&gt;
+      </code></pre>
+      
+    </div>
+    
+
+    <hr class="hr-light">
+
+    <div class="container-fluid" id="signup">
+      
+      <h2 class="h2-responsive font-weight-bold"> FORMS <br> <small> Interested in our cause? Signup to donate and receive exclusive information!</small></h2>
+      <form>
+	<div class="form-group">
+	  <label for="email">Email:</label>
+	  <input type="email" class="form-control" id="email" placeholder="Enter email">
+	</div>
+	
+	<div class="form-group">
+	  <label for="pwd">Password:</label>
+	  <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+	</div>
+	<div class="checkbox">
+	  <label><input type="checkbox"> Remember me</label>
+	</div>
+	<button type="submit" class="btn btn-default">Submit</button>
+      </form>
+
+      <br>
+      <h4> <b> You can make vertical forms (default), horizontal forms, or inline forms. Here is how this form was made! </b></h4>
+      <pre><code>
+	  &lt;div class=&quot;container&quot;&gt;
+	  &lt;form&gt;
+	  &lt;div class=&quot;form-group&quot;&gt;
+	  &lt;label for=&quot;email&quot;&gt;Email:&lt;/label&gt;
+	  &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;email&quot; placeholder=&quot;Enter email&quot;&gt;
+	  &lt;/div&gt;
+	  &lt;div class=&quot;form-group&quot;&gt;
+	  &lt;label for=&quot;pwd&quot;&gt;Password:&lt;/label&gt;
+	  &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;pwd&quot; placeholder=&quot;Enter password&quot;&gt;
+	  &lt;/div&gt;
+	  &lt;div class=&quot;checkbox&quot;&gt;
+	  &lt;label&gt;&lt;input type=&quot;checkbox&quot;&gt; Remember me&lt;/label&gt;
+	  &lt;/div&gt;
+	  &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Submit&lt;/button&gt;
+	  &lt;/form&gt;
+	  &lt;/div&gt;
+      </code>  </pre>
+      
+    </div>
+
+    <hr class="hr-light">
     
     <div class="container-fluid">
-      <h2 class="h1-responsive font-weight-bold"> CONTAINERS </h2>
+      <h2 class="h2-responsive font-weight-bold"> CONTAINERS </h2>
       <h4>
-		Jellyfish or sea jellies are the informal common names given to the medusa-phase of certain gelatinous members of the subphylum Medusozoa, a major part of the phylum 
-		Cnidaria. Jellyfish are mainly free-swimming marine animals with umbrella-shaped bells and trailing tentacles, although a few are not mobile, being anchored to the seabed by stalks.
+	Jellyfish or sea jellies are the informal common names given to the medusa-phase of certain gelatinous members of the subphylum Medusozoa, a major part of the phylum 
+	Cnidaria. Jellyfish are mainly free-swimming marine animals with umbrella-shaped bells and trailing tentacles, although a few are not mobile, being anchored to the seabed by stalks.
 
-		<br>
-		<br>
-		
-	<b>Hey! This text is inside bootstrap's fluid container, which continuously resizes as you change the width of your window/browser!<br>
+	<br>
+	<br>
+	
+	<b>Hey! The chunks of text on this page are written inside bootstrap's containers, which continuously resizes as you change the width of your window/browser!<br>
 	  Try resizing the page to test this out! <br><br>
 
-	Here is code for a container and a fluid container! Both are responsive, but the container is more choppy in resizing than the fluid container! <br></b>
+	  Here is code for a container and a fluid container! Both are responsive, but the container is more choppy in resizing than the fluid container! <br></b><br>
 	<pre><code>
 	    &lt;div class=&quot;container&quot;&gt;    
 	    &lt;h1&gt;Container&lt;/h1&gt;    
@@ -42,66 +125,34 @@
 	</code></pre>
 
 	<br>
-	</h4>
+      </h4>
     </div>
     
-    <nav class=" navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">JaLi Fish</a>
-
-        </div>
-        <ul class="nav navbar-nav">
-	  <li class="active"><a href="#signup"> <button class="btn btn-success"> SIGN UP </button>  </a> </li>
-	  <li class="active"><a href="#endangered"> <button class="btn btn-primary"> SPECIES </button>  </a> </li>
-          <li class="active"> <a href="#grid"> <button class="btn btn-info"> MYTHS</button></a></li>
-	  
-    </div> </nav> 
-
+    <hr class="hr-light">
     <div class="container-fluid">
-      <label for="donations"> <h2 class="h1-responsive font-weight-bold">PROGRESS BAR</h2>
-	<h4> <b>This is the basic code for a progress bar in bootstrap! </b> </h4>
+      <label for="donations"> <h2 class="h1-responsive font-weight-bold">PROGRESS BARS</h2>
+	<h4> <b>We've met 70% of our goal! Sign up to donate to jellyfish! </b></h4>
       </label>
-      <br>
-      <pre> <code>
-	  &lt;div class=&quot;container&quot;&gt;
-	  &lt;div class=&quot;progress&quot;&gt;
-	  &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;70&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width:70%&quot;&gt;
-	  &lt;span class=&quot;sr-only&quot;&gt;70% Complete&lt;/span&gt;
-	  &lt;/div&gt;
-	  &lt;/div&gt;
-	  &lt;/div&gt;
-      </code> </pre>
-      <h4> <b>We've met 70% of our goal! Sign up to donate to jellyfish! </b></h4>
-      
       <div class="progress" id="donations"> 	
 	<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
 	  70% Complete
 	</div>
       </div>
-    </div>
-    
-
-    <div class="container" id="signup">
-      <form>
-	<div class="form-group">
-	  <label for="email">Email:</label>
-	  <input type="email" class="form-control" id="email" placeholder="Enter email" style="width:35vw;">
-	</div>
-	
-	<div class="form-group">
-	  <label for="pwd">Password:</label>
-	  <input type="password" class="form-control" id="pwd" placeholder="Enter password" style="width:35vw;">
-	</div>
-	<div class="checkbox">
-	  <label><input type="checkbox"> Remember me</label>
-	</div>
-	<button type="submit" class="btn btn-default">Submit</button>
-      </form>
+      <h4> <b>This is the basic code for a progress bar in bootstrap! </b> </h4>
+      <pre> <code>
+	  &lt;div class=&quot;container&quot;&gt;
+	  &lt;div class=&quot;progress&quot;&gt;
+	  &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;70&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width:70%&quot;&gt;
+	  70% Complete
+	  &lt;/div&gt;
+	  &lt;/div&gt;
+	  &lt;/div&gt;
+      </code> </pre>
     </div>
 
-    <div class="container" id="endangered">
-      <h1>Endangered Jelly Fish Types</h1>
+    <hr class="hr-light">
+    <div class="container-fluid" id="endangered">
+      <h1>TABLE of Endangered Jellyfish Types</h1>
 
       <table class="table table-dark">
 	<tr>
@@ -131,8 +182,19 @@
 	</tr>
       </table>
 
-    </div>
+    <h4><b>Bootstrap tables are opt-in, meaning you have to actively add a table class to turn a table into a Bootstrap table. Here is how to code a basic table!</b></h4>
 
+    <pre><code>
+	&lt;table class=&quot;table&quot;&gt;  
+	&lt;tr&gt;&lt;th&gt;#&lt;/th&gt;&lt;th&gt;a&lt;/th&gt;&lt;th&gt;Age&lt;/th&gt;&lt;/tr&gt;  
+	&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;b&lt;/td&gt;&lt;td&gt;21&lt;/td&gt;&lt;/tr&gt;  
+	&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;c&lt;/td&gt;&lt;td&gt;25&lt;/td&gt;&lt;/tr&gt;  
+	&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;d&lt;/td&gt;&lt;td&gt;26&lt;/td&gt;&lt;/tr&gt;  
+	&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;e&lt;/td&gt;&lt;td&gt;22&lt;/td&gt;&lt;/tr&gt;  
+	&lt;/table&gt;
+    </code></pre>
+
+    </div>
 
     <div class="container-fluid" id="grid">
       <h1>Jellyfish Myths Busted</h1>
@@ -178,4 +240,8 @@
 
 </html>
 
-<!-- source: https://www.noaa.gov/stories/fact-vs-fiction-3-things-you-thought-you-knew-about-jellyfish -->
+<!-- sources: 
+https://www.noaa.gov/stories/fact-vs-fiction-3-things-you-thought-you-knew-about-jellyfish
+https://www.sitesbay.com/bootstrap/index
+https://getbootstrap.com
+ -->
