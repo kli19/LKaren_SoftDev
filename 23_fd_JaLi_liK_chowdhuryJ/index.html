@@ -52,43 +52,43 @@
 	<div class="cell medium-12">
 	  <div class="primary callout">
 	    <div class="grid-x">
-	    <div class="cell medium-6">
-	      <h1>h1. Very large header.</h1>
-	      <h2>h2. Large header.</h2>
-	      <h3>h3. Medium header.</h3>
-	      <h4>h4. Moderate header.</h4>
-	      <h5>h5. Small header.</h5>
-	      <h6>h6. Tiny header.</h6>
-	      <br><hr><br>
-            </div>	
-	    <div class="cell medium-6">
-	      <h1 class="subheader">h1. Very large subheader</h1>
-	      <h2 class="subheader">h2. Large subheader</h2>
-	      <h3 class="subheader">h3. Medium subheader</h3>
-	      <h4 class="subheader">h4. Moderate subheader</h4>
-	      <h5 class="subheader">h5. Small subheader</h5>
-	      <h6 class="subheader">h6. Tiny subheader</h6>
-	      <br><hr><br>
-	    </div>
-	    <div class="cell medium-6 ">
-	      <h4> This is a list: </h4>
-	      <ul class="square">
-		<li>List item</li>
-		<li><strong>Bolded list item</strong>
-		  <ul>
-		    <li>Nested list Item</li>
-		  </ul>
-		</li>
-		<li><em>Italicized list item </em></li>
-	      </ul>
-	    </div>
-	    <div class="cell medium-6">
-	      <h4> This is a blockquote </h4>
-	      <blockquote>I smell a QAF post.<cite>Mr. Brown</cite></blockquote>
+	      <div class="cell medium-6">
+		<h1>h1. Very large header.</h1>
+		<h2>h2. Large header.</h2>
+		<h3>h3. Medium header.</h3>
+		<h4>h4. Moderate header.</h4>
+		<h5>h5. Small header.</h5>
+		<h6>h6. Tiny header.</h6>
+		<br><hr><br>
+              </div>	
+	      <div class="cell medium-6">
+		<h1 class="subheader">h1. Very large subheader</h1>
+		<h2 class="subheader">h2. Large subheader</h2>
+		<h3 class="subheader">h3. Medium subheader</h3>
+		<h4 class="subheader">h4. Moderate subheader</h4>
+		<h5 class="subheader">h5. Small subheader</h5>
+		<h6 class="subheader">h6. Tiny subheader</h6>
+		<br><hr><br>
+	      </div>
+	      <div class="cell medium-6 ">
+		<h4> This is a list: </h4>
+		<ul class="square">
+		  <li>List item</li>
+		  <li><strong>Bolded list item</strong>
+		    <ul>
+		      <li>Nested list Item</li>
+		    </ul>
+		  </li>
+		  <li><em>Italicized list item </em></li>
+		</ul>
+	      </div>
+	      <div class="cell medium-6">
+		<h4> This is a blockquote </h4>
+		<blockquote>I smell a QAF post.<cite>Mr. Brown</cite></blockquote>
+	      </div>
 	    </div>
 	  </div>
-	  </div>
-	  </div>
+	</div>
       </div>
       <p><a href="https://foundation.zurb.com/sites/docs/typography-base.html">Click here for more information on typography!</a></p>
       <hr>
@@ -174,7 +174,83 @@
       </div>
       <p><a href="https://foundation.zurb.com/sites/docs/forms.html">Click here for more information on forms!</a></p>
       <hr>
+
+      <h1>Controls</h1>
+      <div class="grid-x">
+	<div class="cell medium-6">
+	  <div class="primary callout">
+	    Button Anchors:
+	    <a class="button" href="#">Primary</a>
+	    <a class="button secondary" href="#">Secondary</a>
+	    <a class="button success" href="#">Success</a>
+	    <a class="button alert" href="#">Alert</a>
+	    <a class="button warning" href="#">Warning</a><br>
+	  </div>
+	</div>	
+	<div class="cell medium-6">
+	  <div class="primary callout">
+	    Button Actions:
+	    <button type="button" class="success button">Save</button>
+	    <button type="button" class="alert button">Delete</button>
+	    <br>
+	  </div>
+	</div>	
+	<div class="cell medium-12">
+	  <div class="primary callout">
+	    Button Sizes: 
+	    <a class="button tiny" href="#">So Tiny</a>
+	    <a class="button small" href="#">So Small</a>
+	    <a class="button" href="#">So Basic</a>
+	    <a class="button large" href="#">So Large</a>
+	    <a class="button expanded" href="#">Such Expand</a>
+	    <a class="button small expanded" href="#">Wow, Small Expand</a>
+	  </div>
+	</div>
+	<div class="cell medium-12">
+	  <div class="primary callout">
+	    Disabled Buttons: 
+	    <a class="button disabled" href="#" aria-disabled>Disabled</a>
+	    <button type="button" class="button primary" disabled>Disabled</button>
+	    <button type="button" class="button secondary" disabled>Disabled</button>
+	    <button type="button" class="button success" disabled>Disabled</button>
+	    <button type="button" class="button alert" disabled>Disabled</button>
+	    <button type="button" class="button warning" disabled>Disabled</button>
+	    <br>
+	  </div>
+	</div>
+	<div class="cell medium-4">
+	  <div class="primary callout">
+	    Button Group:
+	    <div class="button-group">
+	      <a class="button">Small</a>
+	      <a class="button">Button</a>
+	      <a class="button">Group</a>
+	    </div>
+	  </div>
+	</div>
+	<div class="cell medium-4">
+	  <div class="primary callout" data-closable>
+	    <button class="close-button" aria-label="Close alert" type="button" data-close>
+	      <span aria-hidden="true">&times;</span>
+	    </button>
+	    <p>Look at this close button!<br> (Must use with plug-ins to actually close)</p>
+	  </div>
+	</div>
+      <div class="cell medium-4">
+	<div class="primary callout">
+	  Switch
+	  <div class="switch">
+	    <input class="switch-input" id="exampleSwitch" type="checkbox" name="exampleSwitch">
+	    <label class="switch-paddle" for="exampleSwitch">
+	      <span class="show-for-sr">Download Kittens</span>
+	    </label>
+	  </div>
+	</div>
+      </div>
+
+      <p><a href="https://foundation.zurb.com/sites/docs/button.html">Click here for more information on controls!</a></p>
+      <hr>
+      
     </div>
   </body>
-
 </html>
