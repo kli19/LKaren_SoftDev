@@ -41,55 +41,140 @@
 	  </div>	
 	</div>
       </div>
+      <p><a href="https://foundation.zurb.com/sites/docs/xy-grid.html">Click here for more information on grids!</a></p>
       <hr>
 
       <h1> Typography </h1>
       <p><b>Refer to lines</b></p>
       <p> Typography in Foundation makes life easier by providing clean, attractive, simple default styles for all of the most basic typographical elements.</p>
 
+      <div class="grid-x">
+	<div class="cell medium-12">
+	  <div class="primary callout">
+	    <div class="grid-x">
+	    <div class="cell medium-6">
+	      <h1>h1. Very large header.</h1>
+	      <h2>h2. Large header.</h2>
+	      <h3>h3. Medium header.</h3>
+	      <h4>h4. Moderate header.</h4>
+	      <h5>h5. Small header.</h5>
+	      <h6>h6. Tiny header.</h6>
+	      <br><hr><br>
+            </div>	
+	    <div class="cell medium-6">
+	      <h1 class="subheader">h1. Very large subheader</h1>
+	      <h2 class="subheader">h2. Large subheader</h2>
+	      <h3 class="subheader">h3. Medium subheader</h3>
+	      <h4 class="subheader">h4. Moderate subheader</h4>
+	      <h5 class="subheader">h5. Small subheader</h5>
+	      <h6 class="subheader">h6. Tiny subheader</h6>
+	      <br><hr><br>
+	    </div>
+	    <div class="cell medium-6 ">
+	      <h4> This is a list: </h4>
+	      <ul class="square">
+		<li>List item</li>
+		<li><strong>Bolded list item</strong>
+		  <ul>
+		    <li>Nested list Item</li>
+		  </ul>
+		</li>
+		<li><em>Italicized list item </em></li>
+	      </ul>
+	    </div>
+	    <div class="cell medium-6">
+	      <h4> This is a blockquote </h4>
+	      <blockquote>I smell a QAF post.<cite>Mr. Brown</cite></blockquote>
+	    </div>
+	  </div>
+	  </div>
+	  </div>
+      </div>
+      <p><a href="https://foundation.zurb.com/sites/docs/typography-base.html">Click here for more information on typography!</a></p>
+      <hr>
+      
+      <h1>Forms</h1>
+      <p>Forms are built with a combination of standard form elements, as well as grid rows and columns or cells.</p>
+      <p> The input types create a text field: <code>text</code>, <code>date</code>, <code>datetime</code>, <code>datetime-local</code>, <code>email</code>, <code>month</code>, <code>number</code>, <code>password</code>, <code>search</code>, <code>tel</code>, <code>time</code>, <code>url</code>, and <code>week</code>.</p>
       <div class="grid-x">	
-	<div class="cell small-6 medium-6 large-6">
+	<div class="cell medium-12">
 	  <div class="primary callout">
-	    <h1>h1. Very large header.</h1>
-	    <h2>h2. Large header.</h2>
-	    <h3>h3. Medium header.</h3>
-	    <h4>h4. Moderate header.</h4>
-	    <h5>h5. Small header.</h5>
-	    <h6>h6. Tiny header.</h6>
-          </div>	
-	</div>
-	<div class="cell small-6 medium-6 large-6">
-	  <div class="primary callout">
-	    <h1 class="subheader">h1. Very large subheader</h1>
-	    <h2 class="subheader">h2. Large subheader</h2>
-	    <h3 class="subheader">h3. Medium subheader</h3>
-	    <h4 class="subheader">h4. Moderate subheader</h4>
-	    <h5 class="subheader">h5. Small subheader</h5>
-	    <h6 class="subheader">h6. Tiny subheader</h6>	    
-	  </div>	
-	</div>
-	<div class="cell small-6 medium-6 large-6">
-	  <div class="primary callout">
-	    <h4> This is a list: </h4>
-	    <ul class="square">
-	      <li>List item</li>
-	      <li><strong>Bolded ist item</strong>
-		<ul>
-		  <li>Nested List Item</li>
-		</ul>
-	      </li>
-	      <li><em>Italicized list item </em></li>
-	    </ul>
+	    <form>
+	      <div class="grid-container">
+		<div class="grid-x grid-padding-x">
+		  <div class="medium-6 cell">
+		    <label>Name
+		      <input type="text" placeholder="Name">
+		    </label>
+		  </div>
+		  <div class="medium-6 cell">
+		    <label>Date
+		      <input type="date">
+		    </label>
+		  </div>
+		  <div class="medium-6 cell">
+		    <label>Email
+		      <input type="email">
+		    </label>
+		  </div>
+		  <div class="medium-6 cell">
+		    <label>Password
+		      <input type="password">
+		    </label>
+		    <p class="help-text" id="passwordHelpText">Your password must have at least 10 characters, a number, and an Emoji.</p>
+		  </div>
+		  <div class="medium-6 cell">
+		    <label>Search
+		      <input type="search">
+		    </label>
+		  </div>
+		  <div class="medium-6 cell">
+		    <label>Number
+		      <div class="input-group">
+			<span class="input-group-label">$</span>
+			<input class="input-group-field" type="number">
+			<div class="input-group-button">
+			  <input type="submit" class="button" value="Submit">
+			</div>
+		      </div>
+		    </label>
+		  </div>
+		  <div class="cell medium-6">
+		    <label>
+		      Multi-line text input
+		      <textarea placeholder="None"></textarea>
+		    </label>
+		  </div>
+		  <div class="cell medium-6">
+		    <label>Select Menu
+		      <select>
+			<option value="a">a</option>
+			<option value="b">b</option>
+			<option value="c">c</option>
+		      </select>
+		    </label>
+		  </div>
+		  <fieldset class="fieldset">
+		    <legend>Choose Your Favorite</legend>
+		    <input type="radio" name="pokemon" value="Red" id="pokemonRed" required><label for="pokemonRed">Red</label>
+		    <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Blue</label>
+		    <input type="radio" name="pokemon" value="Yellow" id="pokemonYellow"><label for="pokemonYellow">Yellow</label>
+		  </fieldset>
+		  <fieldset class="fieldset">
+		    <legend>Check these out</legend>
+		    <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+		    <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
+		    <input id="checkbox3" type="checkbox"><label for="checkbox3">Checkbox 3</label>
+		  </fieldset>
+		</div>
+	      </div>
+	    </form>
 	  </div>
 	</div>
-	<div class="cell small-6 medium-6 large-6">
-	  <div class="primary callout">
-	    <h4> This is a blockquote </h4>
-	    <blockquote>I smell a QAF post.<cite>Mr. Brown</cite></blockquote>
-	</div>
-
-	
       </div>
+      <p><a href="https://foundation.zurb.com/sites/docs/forms.html">Click here for more information on forms!</a></p>
+      <hr>
+    </div>
   </body>
 
 </html>
