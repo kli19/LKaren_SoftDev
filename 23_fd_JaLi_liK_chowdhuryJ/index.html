@@ -8,18 +8,30 @@
 <html lang="en">
   <head>
     <title>Foundation</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0/dist/css/foundation.min.css">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0/dist/css/foundation.min.css">   
   </head>
   
   <body>
+    <div class="top-bar ">
+      <div class="top-bar-left">
+	<ul class="menu" >
+	  <li class="menu-text">JaLi</li>
+	  <li> <a href="#start">Getting Started</a></li>
+	  <li><a href="#grid">Grid</a></li>
+	  <li><a href="#typography">Typography</a></li>
+	  <li><a href="#forms">Forms</a></li>
+	  <li><a href="#controls">Controls</a></li>
+	</ul>
+      </div>
+    </div>
+    
     <div class="grid-container">
-      <h1>Getting Started</h1>
+      <h1 id="start">Getting Started</h1>
       <p>Foundation is a responsive front-end framework, meaning it is designed for and tested on numerous browsers and devices. It's components include a responsive grid, typography, forms, buttons, navigation and other interface elements.</p>   
       <hr>
 
-      <h1> Grid </h1>
-      <p><b>Refer to lines</b></p>
+      <h1 id="grid"> Grid </h1>
+      <p><b>Refer to lines 39-55</b></p>
       <p> Foundation comes with a 12-column flexible grid that can scale out to an arbitrary size and is easily nested. You can use this grid to easily created complicated layouts. The proportion of the cell size with respect to the screen size can change depending on the size of the screen. Let's use the notation s/m/l in which s, m, and l refer the number of columns a cell takes up when the screen is small, medium, and large, respectively.</p>
       <p> Try resizing the screen from small to medium to large to see how the 4/6/8 cell and the 8/6/4 cell change with respect to screen size. </p>
       <p> Note: We have incorportated callouts in our grid to make for easier viewing </P>
@@ -44,8 +56,8 @@
       <p><a href="https://foundation.zurb.com/sites/docs/xy-grid.html">Click here for more information on grids!</a></p>
       <hr>
 
-      <h1> Typography </h1>
-      <p><b>Refer to lines</b></p>
+      <h1 id="typography"> Typography </h1>
+      <p><b>Refer to lines 63-104</b></p>
       <p> Typography in Foundation makes life easier by providing clean, attractive, simple default styles for all of the most basic typographical elements.</p>
 
       <div class="grid-x">
@@ -93,7 +105,8 @@
       <p><a href="https://foundation.zurb.com/sites/docs/typography-base.html">Click here for more information on typography!</a></p>
       <hr>
       
-      <h1>Forms</h1>
+      <h1 id="forms">Forms</h1>
+      <p><b>Refer to lines 115-184</b></p>
       <p>Forms are built with a combination of standard form elements, as well as grid rows and columns or cells.</p>
       <p> The input types create a text field: <code>text</code>, <code>date</code>, <code>datetime</code>, <code>datetime-local</code>, <code>email</code>, <code>month</code>, <code>number</code>, <code>password</code>, <code>search</code>, <code>tel</code>, <code>time</code>, <code>url</code>, and <code>week</code>.</p>
       <div class="grid-x">	
@@ -175,82 +188,84 @@
       <p><a href="https://foundation.zurb.com/sites/docs/forms.html">Click here for more information on forms!</a></p>
       <hr>
 
-      <h1>Controls</h1>
-      <div class="grid-x">
-	<div class="cell medium-6">
-	  <div class="primary callout">
-	    Button Anchors:
-	    <a class="button" href="#">Primary</a>
-	    <a class="button secondary" href="#">Secondary</a>
-	    <a class="button success" href="#">Success</a>
-	    <a class="button alert" href="#">Alert</a>
-	    <a class="button warning" href="#">Warning</a><br>
-	  </div>
-	</div>	
-	<div class="cell medium-6">
-	  <div class="primary callout">
-	    Button Actions:
-	    <button type="button" class="success button">Save</button>
-	    <button type="button" class="alert button">Delete</button>
-	    <br>
-	  </div>
-	</div>	
-	<div class="cell medium-12">
-	  <div class="primary callout">
-	    Button Sizes: 
-	    <a class="button tiny" href="#">So Tiny</a>
-	    <a class="button small" href="#">So Small</a>
-	    <a class="button" href="#">So Basic</a>
-	    <a class="button large" href="#">So Large</a>
-	    <a class="button expanded" href="#">Such Expand</a>
-	    <a class="button small expanded" href="#">Wow, Small Expand</a>
-	  </div>
-	</div>
-	<div class="cell medium-12">
-	  <div class="primary callout">
-	    Disabled Buttons: 
-	    <a class="button disabled" href="#" aria-disabled>Disabled</a>
-	    <button type="button" class="button primary" disabled>Disabled</button>
-	    <button type="button" class="button secondary" disabled>Disabled</button>
-	    <button type="button" class="button success" disabled>Disabled</button>
-	    <button type="button" class="button alert" disabled>Disabled</button>
-	    <button type="button" class="button warning" disabled>Disabled</button>
-	    <br>
-	  </div>
-	</div>
-	<div class="cell medium-4">
-	  <div class="primary callout">
-	    Button Group:
-	    <div class="button-group">
-	      <a class="button">Small</a>
-	      <a class="button">Button</a>
-	      <a class="button">Group</a>
+      <h1 id="controls">Controls</h1>
+      <p><b>Refer to lines 194-264</b></p>
+      <p> Foundation controls include buttons, sliders(JavaScript), and switches.
+	<div class="grid-x">
+	  <div class="cell medium-6">
+	    <div class="primary callout">
+	      Button Anchors:
+	      <a class="button" href="#">Primary</a>
+	      <a class="button secondary" href="#">Secondary</a>
+	      <a class="button success" href="#">Success</a>
+	      <a class="button alert" href="#">Alert</a>
+	      <a class="button warning" href="#">Warning</a><br>
+	    </div>
+	  </div>	
+	  <div class="cell medium-6">
+	    <div class="primary callout">
+	      Button Actions:
+	      <button type="button" class="success button">Save</button>
+	      <button type="button" class="alert button">Delete</button>
+	      <br>
+	    </div>
+	  </div>	
+	  <div class="cell medium-12">
+	    <div class="primary callout">
+	      Button Sizes: 
+	      <a class="button tiny" href="#">So Tiny</a>
+	      <a class="button small" href="#">So Small</a>
+	      <a class="button" href="#">So Basic</a>
+	      <a class="button large" href="#">So Large</a>
+	      <a class="button expanded" href="#">Such Expand</a>
+	      <a class="button small expanded" href="#">Wow, Small Expand</a>
 	    </div>
 	  </div>
-	</div>
-	<div class="cell medium-4">
-	  <div class="primary callout" data-closable>
-	    <button class="close-button" aria-label="Close alert" type="button" data-close>
-	      <span aria-hidden="true">&times;</span>
-	    </button>
-	    <p>Look at this close button!<br> (Must use with plug-ins to actually close)</p>
+	  <div class="cell medium-12">
+	    <div class="primary callout">
+	      Disabled Buttons: 
+	      <a class="button disabled" href="#" aria-disabled>Disabled</a>
+	      <button type="button" class="button primary" disabled>Disabled</button>
+	      <button type="button" class="button secondary" disabled>Disabled</button>
+	      <button type="button" class="button success" disabled>Disabled</button>
+	      <button type="button" class="button alert" disabled>Disabled</button>
+	      <button type="button" class="button warning" disabled>Disabled</button>
+	      <br>
+	    </div>
 	  </div>
-	</div>
-      <div class="cell medium-4">
-	<div class="primary callout">
-	  Switch
-	  <div class="switch">
-	    <input class="switch-input" id="exampleSwitch" type="checkbox" name="exampleSwitch">
-	    <label class="switch-paddle" for="exampleSwitch">
-	      <span class="show-for-sr">Download Kittens</span>
-	    </label>
+	  <div class="cell medium-4">
+	    <div class="primary callout">
+	      Button Group:
+	      <div class="button-group">
+		<a class="button">Small</a>
+		<a class="button">Button</a>
+		<a class="button">Group</a>
+	      </div>
+	    </div>
 	  </div>
-	</div>
-      </div>
+	  <div class="cell medium-4">
+	    <div class="primary callout" data-closable>
+	      <button class="close-button" aria-label="Close alert" type="button" data-close>
+		<span aria-hidden="true">&times;</span>
+	      </button>
+	      <p>Look at this close button!<br> (Must use with plug-ins to actually close)</p>
+	    </div>
+	  </div>
+	  <div class="cell medium-4">
+	    <div class="primary callout">
+	      Switch
+	      <div class="switch">
+		<input class="switch-input" id="exampleSwitch" type="checkbox" name="exampleSwitch">
+		<label class="switch-paddle" for="exampleSwitch">
+		  <span class="show-for-sr">Download Kittens</span>
+		</label>
+	      </div>
+	    </div>
+	  </div>
 
-      <p><a href="https://foundation.zurb.com/sites/docs/button.html">Click here for more information on controls!</a></p>
-      <hr>
-      
-    </div>
+	  <p><a href="https://foundation.zurb.com/sites/docs/button.html">Click here for more information on controls!</a></p>
+	  <hr>
+	  
+	</div>
   </body>
 </html>
