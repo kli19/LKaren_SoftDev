@@ -25,3 +25,6 @@ list.addEventListener('mouseover', function(e){
     heading.innerHTML = e.target.innerHTML;
 });
 
+list.addEventListener('mouseout', function(){
+    heading.innerHTML = "Hello World!";
+});
