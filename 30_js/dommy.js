@@ -28,3 +28,8 @@ list.addEventListener('mouseover', function(e){
 list.addEventListener('mouseout', function(){
     heading.innerHTML = "Hello World!";
 });
+
+list.addEventListener('click', function(e){
+    console.log(e);
+    list.removeChild(e.target);
+});
