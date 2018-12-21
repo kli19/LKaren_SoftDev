@@ -13,9 +13,13 @@ var list_button = document.getElementById("b");
 
 var heading = document.getElementById("h");
 
+var fib_num = 0;
+var fib_list = document.getElementById("fiblist");
+var fib_button = document.getElementById("fb");
+
 list_button.addEventListener('click', function(){
     var li = document.createElement("li");
-    li.innerHTML="item " + list_num;
+    li.innerHTML = "item " + list_num;
     list.appendChild(li);
     list_num++;
 });
@@ -33,3 +37,11 @@ list.addEventListener('click', function(e){
     console.log(e);
     list.removeChild(e.target);
 });
+
+fib_button.addEventListener('click', function(){
+    var li = document.createElement("li");
+    li.innerHTML = `fib(${fib_num}) = ` + fibonacci(fib_num);
+    fib_list.appendChild(li);
+    fib_num++;
+});
+
